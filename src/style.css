@@ -1,0 +1,77 @@
+.App{
+    color:grey;
+    text-align: center;
+}
+h1{
+    background-color: yellow;
+    padding:6px;
+    
+}
+button{
+    background-color: yellow;
+border: 0px solid;
+color:black;
+    border-radius: 8px;
+    padding:10px;
+    margin:10px;
+}
+select{
+    background-color: yellow;
+    margin:8px;
+    
+    border:0px solid;
+    padding:6px;
+    border-radius: 6px;
+}
+option{
+    border:0px solid;
+    padding:8px;
+}
+table{
+    width:75%;
+    margin:auto;
+margin-top:0.5cm;
+}
+td{
+    font-size: small;
+    background-color: yellow;
+
+}
+#description{
+    width:40%;
+}
+img{
+    width:4cm;
+    height:4cm;
+}
+.smallCol{
+    width: 1cm;
+}
+.table{
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+}
+#monthData{
+    background-color: yellow;
+    border-radius: 6px;
+    width:9cm;
+    height:4cm;
+    margin:auto;
+    margin-top:0.5cm;
+    padding:1cm;
+    text-align: left;
+}
+#chart{
+    position:relative;
+    left:9cm;
+    width:fit-content;
+    margin-bottom: 2cm;
+}
+table>h3{
+    width: fit-content;
+    position:absolute;
+    left:10cm;
+    bottom:4cm;
+    color:red;
+    
+}

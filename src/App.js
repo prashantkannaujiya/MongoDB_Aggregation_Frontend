@@ -1,23 +1,27 @@
+import Table from './Table';
+import MonthData from './MonthData';
+import DtChart from './DtChart';
 import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+
 
 function App() {
+const navigate=useNavigate()//declaring useNavigate
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>MongoDB Aggregation Tasks</h1>
+    {/*creating buttons for navigation*/}
+    <div><button className='navigateButton' onClick={()=>{navigate('/')}}>Month's Table</button>
+    <button className='navigateButton' onClick={()=>{navigate('/monthdata')}}>Month's Data</button>
+    <button className='navigateButton' onClick={()=>{navigate('/datachart')}}>Month's Chart</button></div>
+    {/*specifying routing paths*/}
+    <Routes>
+      <Route path='/' element={<Table></Table>}/>
+      <Route path='/monthdata' element={<MonthData></MonthData>}/>
+      <Route path='/datachart' element={<DtChart></DtChart>}/>
+    </Routes>
     </div>
   );
 }
